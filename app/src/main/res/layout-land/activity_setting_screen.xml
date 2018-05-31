@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settingScreen">
+
+    <RelativeLayout
+        android:id="@+id/left_half"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:inputType="textPersonName"
+            android:text="Distance Units"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="24dp" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="444dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="36dp"
+            tools:layout_editor_absoluteX="156dp"
+            tools:layout_editor_absoluteY="52dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/right_half"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:inputType="textPersonName"
+            android:text="Bearing Units"
+            tools:layout_editor_absoluteX="222dp"
+            tools:layout_editor_absoluteY="149dp" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="444dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+
+            android:layout_marginTop="36dp"
+            tools:layout_editor_absoluteX="165dp"
+            tools:layout_editor_absoluteY="223dp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="30dp"
+            android:layout_height="63dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
+            app:srcCompat="@drawable/blue"
+            android:gravity="right"  />
+    </RelativeLayout>
+
+</LinearLayout>
